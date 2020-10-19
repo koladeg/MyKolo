@@ -13,7 +13,7 @@ export default function Home({ navigation }) {
           </View>   
           <View style= {{ ...styles.content}} >
             <Text style={styles.headerTextStyle}>Welcome back!</Text>
-            <Text>Enter your registered phone number to log in</Text>
+            <Text>Enter your registered phone number to log in please</Text>
           </View>
           <View style={{
             flexDirection: 'row',
