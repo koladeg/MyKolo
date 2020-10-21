@@ -26,10 +26,12 @@ export default function Email() {
                 <View style={{flexDirection:'row', flex: 1}}>
                     <TextInput 
                         textContentType='emailAddress'
+                        autoCompleteType='email'
                         keyboardType='email-address'
                         maxLength={20}
                         style={{ flex:1, fontSize: 20 }}
                         placeholder="Email address"
+                        
                     />
                 </View>
                     <Icon type="FontAwesome" name="envelope" />
@@ -44,14 +46,14 @@ export default function Email() {
             }}>
                 <View style={{flexDirection:'row', flex: 1}}>
                     <TextInput 
-                        textContentType='emailAddress'
-                        keyboardType='email-address'
+                        secureTextEntry={true}
+                        textContentType='password'
                         maxLength={20}
                         style={{ flex:1, fontSize: 20 }}
-                        placeholder="Confirm email address"
+                        placeholder="Password"
                     />
                 </View>
-                    <Icon type="FontAwesome" name="envelope" />
+                    <Icon type="FontAwesome" name="lock" />
                 </View> 
                 <Text style={{fontSize: 15, paddingHorizontal: 10,  alignSelf:"flex-end", color:'red', margin:20}}>Forgot password? </Text> 
             <Button text='Continue'/>
